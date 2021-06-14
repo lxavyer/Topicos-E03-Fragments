@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="br.ufmg.coltec.tp.e03_adapters.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="match_parent"
+        android:layout_width="140dp"
+        class="br.ufmg.coltec.tp.e03_adapters.PlacesListFragment"
+        android:id="@+id/frag_places_list"/>
+
+<!--TODO[3] Incluir o componente de fragment que está faltando aqui! -->
+</LinearLayout>
