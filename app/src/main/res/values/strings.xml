@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">E03 - Adapters</string>
+    <string name="um_lugar_qualquer">Um lugar qualquer</string>
+    <string name="place_description">Este é um lugar que serve alguma coisa</string>
+    <string name="place_distance">0.5 KM</string>
 </resources>
