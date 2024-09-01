@@ -38,17 +38,13 @@
 
     <RatingBar
         android:id="@+id/rating_bar"
-        android:layout_width="227dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="26dp"
-        android:isIndicator="true"
         android:numStars="5"
         android:rating="3"
-        android:scaleX="0.2"
-        android:scaleY="0.2"
         android:stepSize="0.5"
-        app:layout_constraintEnd_toStartOf="@+id/txt_distance"
+        android:isIndicator="true"
+        android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@+id/img_place"
         app:layout_constraintTop_toBottomOf="@+id/txt_description" />
 
@@ -61,7 +57,6 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rating_bar"
         app:layout_constraintTop_toBottomOf="@id/txt_description" />
 
     <androidx.constraintlayout.widget.Guideline

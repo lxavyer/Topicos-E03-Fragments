@@ -13,5 +13,10 @@
         class="br.ufmg.coltec.tp.e03_adapters.PlacesListFragment"
         android:id="@+id/frag_places_list"/>
 
-<!--TODO[3] Incluir o componente de fragment que está faltando aqui! -->
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        class="br.ufmg.coltec.tp.e03_adapters.PlaceFragment"
+        android:id="@+id/frag_place_details"/>
+
 </LinearLayout>

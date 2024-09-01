@@ -10,7 +10,7 @@ import androidx.fragment.app.ListFragment;
 
 public class PlacesListFragment extends ListFragment {
 
-    private Place[] lugares = {
+    private final Place[] lugares = {
         new Place("Machu Picchu", "Cidade histórica do povo Inca", R.drawable.ic_machu_picchu, 3133.98, 4.f),
         new Place("Alhambra", "Palácio árabe na cidade de Granada, ESP.", R.drawable.ic_alhambra, 7626.22, 5.f),
         new Place("Bariloche", "Cidade turística ao sudoeste da Argentina", R.drawable.ic_bariloche, 3498.84, 4.f),
@@ -30,7 +30,10 @@ public class PlacesListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         Place lugarSelecionado = this.lugares[position];
+        PlaceFragment fragment = (PlaceFragment) this.getActivity().getSupportFragmentManager().findFragmentById(R.id.frag_place_details);
 
-        // TODO[4]: Recuperar PlaceFragment e atualizar o lugar
+        if (fragment != null) {
+            fragment.atualizaLugar(lugarSelecionado);
+        }
     }
 }
